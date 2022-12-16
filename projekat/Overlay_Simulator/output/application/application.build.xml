@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator" name="Overlay_Simulator">
+	<target description="Assembling .a and .s files..." name="casm">
+		<delete file="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/gen/src/Overlay_Simulator_odt.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=application"/>
+			<arg value="-D_OVLY_REVISION_=010000"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=010000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-lE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.lst"/>
+			<arg value="-oE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.img"/>
+			<arg value="-fC:/CirrusDSP/crystal32/memory_maps/v01.mem.xml"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.O"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_c/output/mixerNxM_c_1_0_0.olib"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=application"/>
+			<arg value="-lC:/CirrusDSP/lib/"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/crystal32/"/>
+			<arg value="-lC:/CirrusDSP/crystal32/common/lib/"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.img"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.uld"/>
+		</exec>
+	</target>
+</project>

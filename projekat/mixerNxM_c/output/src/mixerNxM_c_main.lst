@@ -1,0 +1,390 @@
+1     	 0000					.extern ___C_STACK_BG
+2     	 0000					.extern ___C_STACK_FG
+3     	 0000					.extern ___X_BL_TEMPBUFF
+4     	 0000					.extern ___X_BL_TEMPBUFF0
+5     	 0000					.extern ___X_BL_TEMPBUFF1
+6     	 0000					.extern ___X_BL_TEMPBUFF10
+7     	 0000					.extern ___X_BL_TEMPBUFF11
+8     	 0000					.extern ___X_BL_TEMPBUFF12
+9     	 0000					.extern ___X_BL_TEMPBUFF13
+10    	 0000					.extern ___X_BL_TEMPBUFF14
+11    	 0000					.extern ___X_BL_TEMPBUFF15
+12    	 0000					.extern ___X_BL_TEMPBUFF2
+13    	 0000					.extern ___X_BL_TEMPBUFF3
+14    	 0000					.extern ___X_BL_TEMPBUFF4
+15    	 0000					.extern ___X_BL_TEMPBUFF5
+16    	 0000					.extern ___X_BL_TEMPBUFF6
+17    	 0000					.extern ___X_BL_TEMPBUFF7
+18    	 0000					.extern ___X_BL_TEMPBUFF8
+19    	 0000					.extern ___X_BL_TEMPBUFF9
+20    	 0000					.extern ___X_BX_TEMPBUFF
+21    	 0000					.extern ___X_BX_TEMPBUFF0
+22    	 0000					.extern ___X_BX_TEMPBUFF1
+23    	 0000					.extern ___X_BX_TEMPBUFF10
+24    	 0000					.extern ___X_BX_TEMPBUFF11
+25    	 0000					.extern ___X_BX_TEMPBUFF12
+26    	 0000					.extern ___X_BX_TEMPBUFF13
+27    	 0000					.extern ___X_BX_TEMPBUFF14
+28    	 0000					.extern ___X_BX_TEMPBUFF15
+29    	 0000					.extern ___X_BX_TEMPBUFF2
+30    	 0000					.extern ___X_BX_TEMPBUFF3
+31    	 0000					.extern ___X_BX_TEMPBUFF4
+32    	 0000					.extern ___X_BX_TEMPBUFF5
+33    	 0000					.extern ___X_BX_TEMPBUFF6
+34    	 0000					.extern ___X_BX_TEMPBUFF7
+35    	 0000					.extern ___X_BX_TEMPBUFF8
+36    	 0000					.extern ___X_BX_TEMPBUFF9
+37    	 0000					.extern ___X_BY_IOBUFFER_PTRS
+38    	 0000					.extern ___X_BY_TEMPBUFF
+39    	 0000					.extern ___X_BY_TEMPBUFF0
+40    	 0000					.extern ___X_BY_TEMPBUFF1
+41    	 0000					.extern ___X_BY_TEMPBUFF10
+42    	 0000					.extern ___X_BY_TEMPBUFF11
+43    	 0000					.extern ___X_BY_TEMPBUFF12
+44    	 0000					.extern ___X_BY_TEMPBUFF13
+45    	 0000					.extern ___X_BY_TEMPBUFF14
+46    	 0000					.extern ___X_BY_TEMPBUFF15
+47    	 0000					.extern ___X_BY_TEMPBUFF2
+48    	 0000					.extern ___X_BY_TEMPBUFF3
+49    	 0000					.extern ___X_BY_TEMPBUFF4
+50    	 0000					.extern ___X_BY_TEMPBUFF5
+51    	 0000					.extern ___X_BY_TEMPBUFF6
+52    	 0000					.extern ___X_BY_TEMPBUFF7
+53    	 0000					.extern ___X_BY_TEMPBUFF8
+54    	 0000					.extern ___X_BY_TEMPBUFF9
+55    	 0000					.extern ___X_VX_NEXTFRM_REINIT_REQ
+56    	 0000					.extern ___X_VX_PPM_INPUTMODE
+57    	 0000					.extern ___X_VX_PPM_INPUT_CHANNELS
+58    	 0000					.extern ___X_VX_PPM_OUTPUTMODE
+59    	 0000					.extern ___X_VX_PPM_OUTPUT_CHANNELS
+60    	 0000					.extern ___X_VX_PPM_SAMPLERATE
+61    	 0000					.extern ___X_VX_PPM_VALID_CHANNELS
+62    	 0000					.extern ___X_VX_REINIT
+63    	 0000					.extern ___X_VX_UNDERFLOW
+64    	 0000					.public _mixerNxM_c_mcv
+65    	 0000					.public _mixerNxM_c_mcv_HOST
+66    	 0000					.extern _mixerNxM_c_mif
+67    	 0000					.public _mixerNxM_c_background
+68    	 0000					.public _mixerNxM_c_brick
+69    	 0000					.public _mixerNxM_c_frame
+70    	 0000					.public _mixerNxM_c_postKickstart
+71    	 0000					.public _mixerNxM_c_postMallocInit
+72    	 0000					.public _mixerNxM_c_preKickstart
+73    	 0000					.public _mixerNxM_c_preMallocInit
+74    	 0000					.public _mixerNxM_c_timer
+75    	 0000					.extern _mixerNxM_init
+76    	 0000					.extern _mixerNxM_processing
+77    	 0000					.extern cl_clearNM0_7
+78    						Y_mixerNxM_c_mcv_HOST	.ydata_ovly
+78     >> start of macro: .ydata_ovly
+1+    									seg_single Y_mixerNxM_c_mcv_HOST, "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "Y_mixerNxM_c_mcv_HOST" != "" ) & defined( ___SegStart_Y_Y_mixerNxM_c_mcv_HOST )
+2+    						Y_mixerNxM_c_mcv_HOST    segment
+3+    						  .else
+4+    						Y_mixerNxM_c_mcv_HOST    segment "Y_OVLY"
+5+    							.if "Y_mixerNxM_c_mcv_HOST" != ""
+6+    	 0000				___SegStart_Y_Y_mixerNxM_c_mcv_HOST
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+79    						S_mixerNxM_c_mcv_HOST_0	.struct
+80    						_enable	.dw (0x0)
+81    						_defaultOutputMode	.dw (0x0)
+82    						_knob	.dw (0x0)
+83    						_output_gain	.dw (0x0)
+84    						_knob_0	.dw (0x0)
+85    						_knob_1	.dw (0x0)
+86    						_knob_2	.dw (0x0)
+87    						_knob_3	.dw (0x0)
+88    						_knob_4	.dw (0x0)
+89    						_knob_5	.dw (0x0)
+90    						_knob_6	.dw (0x0)
+91    						_knob_7	.dw (0x0)
+92    						_knob_8	.dw (0x0)
+93    							.endstruct
+94    						
+95    						Y_mixerNxM_c_mcv	.ydata_ovly
+95     >> start of macro: .ydata_ovly
+1+    									seg_single Y_mixerNxM_c_mcv, "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "Y_mixerNxM_c_mcv" != "" ) & defined( ___SegStart_Y_Y_mixerNxM_c_mcv )
+2+    						Y_mixerNxM_c_mcv    segment
+3+    						  .else
+4+    						Y_mixerNxM_c_mcv    segment "Y_OVLY"
+5+    							.if "Y_mixerNxM_c_mcv" != ""
+6+    	 0000				___SegStart_Y_Y_mixerNxM_c_mcv
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+96    	 0000				(null)	 0000	 00000000	 
+96    	 0001				(null)	 0001	 00000000	 
+96    	 0002				(null)	 0002	 00000000	 
+96    	 0003				(null)	 0003	 00000000	 
+96    	 0004				(null)	 0004	 00000000	 
+96    	 0005				(null)	 0005	 00000000	 
+96    	 0006				(null)	 0006	 00000000	 
+96    	 0007				(null)	 0007	 00000000	 
+96    	 0008				(null)	 0008	 00000000	 
+96    	 0009				(null)	 0009	 00000000	 
+96    	 000A				(null)	 000A	 00000000	 
+96    	 000B				(null)	 000B	 00000000	 
+96    	 000C				(null)	 000C	 00000000	 
+96    						_mixerNxM_c_mcv S_mixerNxM_c_mcv_HOST_0
+97    						
+98    						Y_mixerNxM_c_mcv_HOST	.ydata_ovly
+98     >> start of macro: .ydata_ovly
+1+    									seg_single Y_mixerNxM_c_mcv_HOST, "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "Y_mixerNxM_c_mcv_HOST" != "" ) & defined( ___SegStart_Y_Y_mixerNxM_c_mcv_HOST )
+2+    						Y_mixerNxM_c_mcv_HOST    segment
+3+    						  .else
+4+    						Y_mixerNxM_c_mcv_HOST    segment "Y_OVLY"
+5+    							.if "Y_mixerNxM_c_mcv_HOST" != ""
+6+    						___SegStart_Y_Y_mixerNxM_c_mcv_HOST
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+99    						_mixerNxM_c_mcv_HOST S_mixerNxM_c_mcv_HOST_0 (
+100   						 0x1,
+101   						 0x1,
+102   						 0x50c335d3,
+103   						 0x50c335d3,
+104   						 0x50c335d3,
+105   						 0x50c335d3,
+106   						 0x50c335d3,
+107   						 0x50c335d3,
+108   						 0x50c335d3,
+109   						 0x50c335d3,
+110   						 0x50c335d3,
+111   						 0x50c335d3,
+112   						 0x50c335d3
+113   						)
+113   	 0000				(null)	 0000	 00000001	 
+113   	 0001				(null)	 0001	 00000001	 
+113   	 0002				(null)	 0002	 50C335D3	 
+113   	 0003				(null)	 0003	 50C335D3	 
+113   	 0004				(null)	 0004	 50C335D3	 
+113   	 0005				(null)	 0005	 50C335D3	 
+113   	 0006				(null)	 0006	 50C335D3	 
+113   	 0007				(null)	 0007	 50C335D3	 
+113   	 0008				(null)	 0008	 50C335D3	 
+113   	 0009				(null)	 0009	 50C335D3	 
+113   	 000A				(null)	 000A	 50C335D3	 
+113   	 000B				(null)	 000B	 50C335D3	 
+113   	 000C				(null)	 000C	 50C335D3	 
+114   						
+115   							.code_ovly
+115    >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+116   						
+117   						
+118   						
+119   	 0000				_mixerNxM_c_background:			/* LN: 42 | CYCLE: 0 | RULES: () */ 
+120   	 0000	 80880000		call (cl_clearNM0_7)			# LN: 42 | 
+121   	 0001	 A7050000		i7 = (0) + (___C_STACK_BG)			# LN: 42 | 
+122   	 0002	 A0050000		i0 = (0) + (_mixerNxM_c_mcv_HOST)			# LN: 45 | 
+123   	 0003	 A1050000		i1 = (0) + (_mixerNxM_c_mcv)			# LN: 45 | 
+124   	 0004	 80D00006		do (0xd), label_end_11_0			# LN: 45 | 
+125   	 0005				label_begin_11_0:			/* LN: 45 | CYCLE: 0 | RULES: (CLowerMoveStructOrArrayFromMemToMem32to32) */ 
+126   	 0005	 80940010		x0 = ymem[i0]; i0 += 1			# LN: 45, 45 | 
+127   	 0006				label_end_11_0:			# LN: 45 | CYCLE: 1 | RULES: (CLowerMoveStructOrArrayFromMemToMem32to32)
+128   	 0006	 80D40011		ymem[i1] = x0; i1 += 1			# LN: 45, 45 | 
+129   	 0007	 81880000		ret			# LN: 48 | 
+130   						
+131   						
+132   						
+133   	 0008				_mixerNxM_c_brick:			/* LN: 37 | CYCLE: 0 | RULES: () */ 
+134   	 0008	 80880000		call (cl_clearNM0_7)			# LN: 37 | 
+135   	 0009	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 37 | 
+136   	 000A	 A0050000		i0 = (0) + (___X_BY_IOBUFFER_PTRS)			# LN: 39 | 
+137   	 000B	 A1050000		i1 = (0) + (___X_BY_IOBUFFER_PTRS)			# LN: 39 | 
+138   	 000C	 80880000		call (_mixerNxM_processing)			# LN: 39 | 
+139   	 000D	 81880000		ret			# LN: 40 | 
+140   						
+141   						
+142   						
+143   	 000E				_mixerNxM_c_frame:			/* LN: 32 | CYCLE: 0 | RULES: () */ 
+144   	 000E	 80880000		call (cl_clearNM0_7)			# LN: 32 | 
+145   	 000F	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 32 | 
+146   	 0010	 81880000		ret			# LN: 35 | 
+147   						
+148   						
+149   						
+150   	 0011				_mixerNxM_c_postKickstart:			/* LN: 22 | CYCLE: 0 | RULES: () */ 
+151   	 0011	 80880000		call (cl_clearNM0_7)			# LN: 22 | 
+152   	 0012	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 22 | 
+153   	 0013	 80880000		call (_mixerNxM_init)			# LN: 24 | 
+154   	 0014	 81880000		ret			# LN: 25 | 
+155   						
+156   						
+157   						
+158   	 0015				_mixerNxM_c_postMallocInit:			/* LN: 55 | CYCLE: 0 | RULES: () */ 
+159   	 0015	 80880000		call (cl_clearNM0_7)			# LN: 55 | 
+160   	 0016	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 55 | 
+161   	 0017	 81880000		ret			# LN: 58 | 
+162   						
+163   						
+164   						
+165   	 0018				_mixerNxM_c_preKickstart:			/* LN: 17 | CYCLE: 0 | RULES: () */ 
+166   	 0018	 80880000		call (cl_clearNM0_7)			# LN: 17 | 
+167   	 0019	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 17 | 
+168   	 001A	 81880000		ret			# LN: 20 | 
+169   						
+170   						
+171   						
+172   	 001B				_mixerNxM_c_preMallocInit:			/* LN: 50 | CYCLE: 0 | RULES: () */ 
+173   	 001B	 80880000		call (cl_clearNM0_7)			# LN: 50 | 
+174   	 001C	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 50 | 
+175   	 001D	 81880000		ret			# LN: 53 | 
+176   						
+177   						
+178   						
+179   	 001E				_mixerNxM_c_timer:			/* LN: 27 | CYCLE: 0 | RULES: () */ 
+180   	 001E	 80880000		call (cl_clearNM0_7)			# LN: 27 | 
+181   	 001F	 A7050000		i7 = (0) + (___C_STACK_FG)			# LN: 27 | 
+182   	 0020	 81880000		ret			# LN: 30 | 
+183   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+Y_mixerNxM_c_mcv                                                                			  Unused Relocatable        Y_mixerNxM_c_mcv:0000H
+Y_mixerNxM_c_mcv_HOST                                                           			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           			  Unused Variable		        0 (0H)
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___C_STACK_BG                                                                   					 External   
+___C_STACK_FG                                                                   					 External   
+___SegStart_Y_Y_mixerNxM_c_mcv                                                  			  Unused Relocatable        Y_mixerNxM_c_mcv:0000H
+___SegStart_Y_Y_mixerNxM_c_mcv_HOST                                             			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0000H
+___X_BL_TEMPBUFF                                                                					 External   
+___X_BL_TEMPBUFF0                                                               					 External   
+___X_BL_TEMPBUFF1                                                               					 External   
+___X_BL_TEMPBUFF10                                                              					 External   
+___X_BL_TEMPBUFF11                                                              					 External   
+___X_BL_TEMPBUFF12                                                              					 External   
+___X_BL_TEMPBUFF13                                                              					 External   
+___X_BL_TEMPBUFF14                                                              					 External   
+___X_BL_TEMPBUFF15                                                              					 External   
+___X_BL_TEMPBUFF2                                                               					 External   
+___X_BL_TEMPBUFF3                                                               					 External   
+___X_BL_TEMPBUFF4                                                               					 External   
+___X_BL_TEMPBUFF5                                                               					 External   
+___X_BL_TEMPBUFF6                                                               					 External   
+___X_BL_TEMPBUFF7                                                               					 External   
+___X_BL_TEMPBUFF8                                                               					 External   
+___X_BL_TEMPBUFF9                                                               					 External   
+___X_BX_TEMPBUFF                                                                					 External   
+___X_BX_TEMPBUFF0                                                               					 External   
+___X_BX_TEMPBUFF1                                                               					 External   
+___X_BX_TEMPBUFF10                                                              					 External   
+___X_BX_TEMPBUFF11                                                              					 External   
+___X_BX_TEMPBUFF12                                                              					 External   
+___X_BX_TEMPBUFF13                                                              					 External   
+___X_BX_TEMPBUFF14                                                              					 External   
+___X_BX_TEMPBUFF15                                                              					 External   
+___X_BX_TEMPBUFF2                                                               					 External   
+___X_BX_TEMPBUFF3                                                               					 External   
+___X_BX_TEMPBUFF4                                                               					 External   
+___X_BX_TEMPBUFF5                                                               					 External   
+___X_BX_TEMPBUFF6                                                               					 External   
+___X_BX_TEMPBUFF7                                                               					 External   
+___X_BX_TEMPBUFF8                                                               					 External   
+___X_BX_TEMPBUFF9                                                               					 External   
+___X_BY_IOBUFFER_PTRS                                                           					 External   
+___X_BY_TEMPBUFF                                                                					 External   
+___X_BY_TEMPBUFF0                                                               					 External   
+___X_BY_TEMPBUFF1                                                               					 External   
+___X_BY_TEMPBUFF10                                                              					 External   
+___X_BY_TEMPBUFF11                                                              					 External   
+___X_BY_TEMPBUFF12                                                              					 External   
+___X_BY_TEMPBUFF13                                                              					 External   
+___X_BY_TEMPBUFF14                                                              					 External   
+___X_BY_TEMPBUFF15                                                              					 External   
+___X_BY_TEMPBUFF2                                                               					 External   
+___X_BY_TEMPBUFF3                                                               					 External   
+___X_BY_TEMPBUFF4                                                               					 External   
+___X_BY_TEMPBUFF5                                                               					 External   
+___X_BY_TEMPBUFF6                                                               					 External   
+___X_BY_TEMPBUFF7                                                               					 External   
+___X_BY_TEMPBUFF8                                                               					 External   
+___X_BY_TEMPBUFF9                                                               					 External   
+___X_VX_NEXTFRM_REINIT_REQ                                                      					 External   
+___X_VX_PPM_INPUTMODE                                                           					 External   
+___X_VX_PPM_INPUT_CHANNELS                                                      					 External   
+___X_VX_PPM_OUTPUTMODE                                                          					 External   
+___X_VX_PPM_OUTPUT_CHANNELS                                                     					 External   
+___X_VX_PPM_SAMPLERATE                                                          					 External   
+___X_VX_PPM_VALID_CHANNELS                                                      					 External   
+___X_VX_REINIT                                                                  					 External   
+___X_VX_UNDERFLOW                                                               					 External   
+_mixerNxM_c_background                                                          			  Public Relocatable       mixerNxM_c_main_GEN_0000:0000H
+_mixerNxM_c_brick                                                               			  Public Relocatable       mixerNxM_c_main_GEN_0000:0008H
+_mixerNxM_c_frame                                                               			  Public Relocatable       mixerNxM_c_main_GEN_0000:000EH
+_mixerNxM_c_mcv._defaultOutputMode                                              			  Unused Relocatable        Y_mixerNxM_c_mcv:0001H
+_mixerNxM_c_mcv._enable                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0000H
+_mixerNxM_c_mcv._knob                                                           			  Unused Relocatable        Y_mixerNxM_c_mcv:0002H
+_mixerNxM_c_mcv._knob_0                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0004H
+_mixerNxM_c_mcv._knob_1                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0005H
+_mixerNxM_c_mcv._knob_2                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0006H
+_mixerNxM_c_mcv._knob_3                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0007H
+_mixerNxM_c_mcv._knob_4                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0008H
+_mixerNxM_c_mcv._knob_5                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:0009H
+_mixerNxM_c_mcv._knob_6                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:000AH
+_mixerNxM_c_mcv._knob_7                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:000BH
+_mixerNxM_c_mcv._knob_8                                                         			  Unused Relocatable        Y_mixerNxM_c_mcv:000CH
+_mixerNxM_c_mcv._output_gain                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv:0003H
+_mixerNxM_c_mcv_HOST._defaultOutputMode                                         			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0001H
+_mixerNxM_c_mcv_HOST._enable                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0000H
+_mixerNxM_c_mcv_HOST._knob                                                      			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0002H
+_mixerNxM_c_mcv_HOST._knob_0                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0004H
+_mixerNxM_c_mcv_HOST._knob_1                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0005H
+_mixerNxM_c_mcv_HOST._knob_2                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0006H
+_mixerNxM_c_mcv_HOST._knob_3                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0007H
+_mixerNxM_c_mcv_HOST._knob_4                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0008H
+_mixerNxM_c_mcv_HOST._knob_5                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0009H
+_mixerNxM_c_mcv_HOST._knob_6                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:000AH
+_mixerNxM_c_mcv_HOST._knob_7                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:000BH
+_mixerNxM_c_mcv_HOST._knob_8                                                    			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:000CH
+_mixerNxM_c_mcv_HOST._output_gain                                               			  Unused Relocatable        Y_mixerNxM_c_mcv_HOST:0003H
+_mixerNxM_c_mif                                                                 					 External   
+_mixerNxM_c_postKickstart                                                       			  Public Relocatable       mixerNxM_c_main_GEN_0000:0011H
+_mixerNxM_c_postMallocInit                                                      			  Public Relocatable       mixerNxM_c_main_GEN_0000:0015H
+_mixerNxM_c_preKickstart                                                        			  Public Relocatable       mixerNxM_c_main_GEN_0000:0018H
+_mixerNxM_c_preMallocInit                                                       			  Public Relocatable       mixerNxM_c_main_GEN_0000:001BH
+_mixerNxM_c_timer                                                               			  Public Relocatable       mixerNxM_c_main_GEN_0000:001EH
+_mixerNxM_init                                                                  					 External   
+_mixerNxM_processing                                                            					 External   
+cl_clearNM0_7                                                                   					 External   
+label_begin_11_0                                                                			  Unused Relocatable        mixerNxM_c_main_GEN_0000:0005H
+label_end_11_0                                                                  			         Relocatable         mixerNxM_c_main_GEN_0000:0006H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+000DH	 Y_mixerNxM_c_mcv_HOST                   			 Y_OVLY                                  
+000DH	 Y_mixerNxM_c_mcv                        			 Y_OVLY                                  
+0021H	 mixerNxM_c_main_GEN_0000                			 CODE_OVLY                               

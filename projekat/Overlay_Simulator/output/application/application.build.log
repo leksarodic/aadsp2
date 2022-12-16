@@ -1,0 +1,63 @@
+============= BUILDING STARTED ============
+  Project: Overlay_Simulator
+===========================================
+Assembling .a and .s files...
+E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/gen/src/Overlay_Simulator_odt.a
+C:/CirrusDSP/bin/casm E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/gen/src/Overlay_Simulator_odt.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0701
+ -D_SLOT_=0
+ -D_OVLY_=application
+ -D_OVLY_REVISION_=010000
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -D_TARGET_FAMILY_=crystal32
+ -D_MUI_VERSION_=010000
+ -IC:/CirrusDSP/include/
+ -lE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.lst
+ -oE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+Linking files...
+C:/CirrusDSP/bin/clink
+ -oE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.img
+ -fC:/CirrusDSP/crystal32/memory_maps/v01.mem.xml
+ --output_type=RAM
+ --overlay_type=application
+ -lC:/CirrusDSP/lib/
+ -lC:/CirrusDSP/lib/dsplib
+ -lC:/CirrusDSP/lib/dsplib/crystal32/
+ -lC:/CirrusDSP/crystal32/common/lib/
+E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/gen/src/Overlay_Simulator_odt.O
+E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_c/output/mixerNxM_c_1_0_0.olib
+     [exec] 
+     [exec] List of linked library's modules:
+Creating .uld file...
+C:/CirrusDSP/bin/lnkuld
+ -ja
+ E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.img
+ E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.uld
+     [exec] 
+     [exec] Reading file: E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.img ...
+     [exec] 	Processed 54 line(s).
+     [exec] 
+     [exec] Writing output to file: E:
+     [exec] /Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.uld ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.uldb ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/Overlay_Simulator/output/application/Overlay_Simulator__application_1_0_0.uldc ...
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

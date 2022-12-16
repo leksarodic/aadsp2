@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_model3" name="mixerNxM_model3">
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oE:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_model3/output/standalone/mixerNxM_model3.img"/>
+			<arg value="-fC:/CirrusDSP/crystal32/memory_maps/v00.mem.xml"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_model3/output/standalone/src/main.O"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=standalone"/>
+			<arg value="-lC:/CirrusDSP/lib/"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/crystal32/"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_model3/output/standalone/mixerNxM_model3.img"/>
+			<arg value="E:/Faks/Materijali/7-semestar/Arhitekture i algoritmi DSP-a 2/projekat/Zadatak_40_2018/mixerNxM/mixerNxM/mixerNxM_model3/output/standalone/mixerNxM_model3.uld"/>
+		</exec>
+	</target>
+</project>

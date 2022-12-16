@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1544139349858">
+	<dependencies>
+		<source_file last_build_time="1544139348366" path="src/mixerNxM_c_os_interface.c">
+			<dependency>../inc/mixerNxM_c_impl.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/cl_os.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/platform_support.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdbool.h</dependency>
+			<dependency>../gen/inc/mixerNxM_c_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response.h</dependency>
+			<dependency>../gen/inc/mixerNxM_c_module.h</dependency>
+		</source_file>
+		<source_file last_build_time="1544139348896" path="src/mixerNxM_c_main.c">
+			<dependency>../inc/mixerNxM_c_impl.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/cl_os.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/platform_support.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdbool.h</dependency>
+			<dependency>../gen/inc/mixerNxM_c_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response.h</dependency>
+			<dependency>../gen/inc/mixerNxM_c_module.h</dependency>
+			<dependency>../inc/mixerNxM.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
+			<dependency>../inc/common.h</dependency>
+			<dependency>../inc/stdfix_emu.h</dependency>
+		</source_file>
+		<source_file last_build_time="1544139349443" path="src/mixerNxM.c">
+			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/wavefile.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+			<dependency>C:/CirrusDSP/include/string.h</dependency>
+			<dependency>../inc/common.h</dependency>
+			<dependency>../inc/stdfix_emu.h</dependency>
+			<dependency>C:/CirrusDSP/include/circbuff.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/cl_os.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/platform_support.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdbool.h</dependency>
+			<dependency>../gen/inc/mixerNxM_c_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response.h</dependency>
+			<dependency>../inc/mixerNxM.h</dependency>
+			<dependency>../inc/common.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>
